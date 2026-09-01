@@ -55,7 +55,7 @@ The consolidated pipeline, in two parts. **Part 1** reproduces the data preparat
 
 - **Introducción** — the challenge, the methodology and the models' performance, explained in business terms
 - **Predicción Modelo** — the core feature: upload a `.csv` / `.xlsx` file with current-employee data and receive each model's forecast of the resignation window, the per-class probabilities, and a final consensus forecast (the highest-probability class across both models)
-- **Gráficos Dataset Demográfico** — four interactive charts (exit-year share, exit-month trend, resignations by role, resignations by department) driven by dropdown and slider filters
+- **Gráficos Dataset Demográfico** — four interactive charts (exit-year share, exit-month trend, resignations by role, resignations by department) driven by dropdown and slider filters of the five values 'Resignation Year', 'Number of Children', 'Resignation Month', 'Role' and 'Department'
 - **Gráficos Auxiliares** — the tenure-vs-attrition curve and the evolution of the five highest-turnover roles
 
 The app loads the trained models, scaler and encoders via `joblib` and runs predictions in real time on user-uploaded files, with input-format validation and graceful error handling.
